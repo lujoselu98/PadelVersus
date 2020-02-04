@@ -52,7 +52,6 @@ The webapp will implement ELO ranking system automatically calculated.
 
 ### Snapshots
 #### Home
-<<<<<<< HEAD
 This window will show you some matches of the tournament with their dates, and their places. Moreover, will show you the latest matches and the next matches and the main managers.
 ![Home](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/Captura.JPG)
 #### Loggin
@@ -71,6 +70,7 @@ Contains a slider where you can navigate between tournaments to see which teams 
 ![Teams](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/Teams.PNG)
 #### SpecificTeam
 A page where the team logo, the team name and its two members are shown. Below this information we find statistics about the team.
+![SpecTeam](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/SpecificTeam.PNG)
 #### Player/User
 This window will show you main features of the players of each team, the last five matches, the club history and the trophies. Moreover, it shows you the minutes played, one summary of the player, detailed player statistics (graphic)and his points per game (graphic).
 ![UserView](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/PlayerView.JPG)
@@ -82,13 +82,3 @@ Contains one calendar with the matches of each month.
 ![Calendar](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/Calendar.JPG)
 ### Flow Diagram
 ![Diagram](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/flowDiagram.JPG)
-=======
-#### Matches
-#### SpecificMatch
-#### Teams
-#### SpecificTeam
-#### Player/User
-
-#### Registration Tournament
-### Flow Diagram
->>>>>>> origin/develop
