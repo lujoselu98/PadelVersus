@@ -26,6 +26,9 @@ public class Team {
     @ManyToMany
     private List<Match> matches;
 
+    @Lob
+    private byte[] image;
+
     public Team(){
     }
 
