@@ -1,4 +1,5 @@
-package com.example.padelversus;
+package com.example.padelversus.user;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.Connection;
 import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.User;
@@ -14,6 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class SocialFacebookController {
+    @Autowired
+    private UserService userService;
 
     private FacebookConnectionFactory factory = new FacebookConnectionFactory("237417980592642",
             "f277ddc32f1e45c2e41359da292909d5");
@@ -24,7 +27,7 @@ public class SocialFacebookController {
         OAuth2Operations operations = factory.getOAuthOperations();
         OAuth2Parameters params = new OAuth2Parameters();
 
-        params.setRedirectUri("http://localhost:8080/forwardLogin");
+        params.setRedirectUri("http://localhost:8080/forwardLogin/");
         params.setScope("email,public_profile");
 
         String url = operations.buildAuthenticateUrl(params);
@@ -33,21 +36,19 @@ public class SocialFacebookController {
 
     }
 
-    @RequestMapping(value = "/forwardLogin")
-    public ModelAndView prodducer(@RequestParam("code") String authorizationCode) {
+    @RequestMapping(value = "/forwardLogin/")
+    public String prodducer(@RequestParam("code") String authorizationCode) {
         OAuth2Operations operations = factory.getOAuthOperations();
-        AccessGrant accessToken = operations.exchangeForAccess(authorizationCode, "http://localhost:8080/forwardLogin",
+        AccessGrant accessToken = operations.exchangeForAccess(authorizationCode, "http://localhost:8080/forwardLogin/",
                 null);
         Connection<Facebook> connection = factory.createConnection(accessToken);
         Facebook facebook = connection.getApi();
         String[] fields = { "id", "email", "first_name", "last_name" };
         User userProfile = facebook.fetchObject("me", User.class, fields);
-        System.out.println("email "+userProfile.getEmail());
-        System.out.println("nombre "+userProfile.getName());
-        System.out.println("userProfile = " + userProfile);
+        String userName = userService.saveUser(userProfile.getName(), null, userProfile.getEmail());
         ModelAndView model = new ModelAndView("/player/s");
         model.addObject("user", userProfile);
-        return model;
+        return "signup";
 
     }
 
