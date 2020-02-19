@@ -39,17 +39,17 @@ public class SocialFacebookController {
     @RequestMapping(value = "/forwardLogin/")
     public String prodducer(@RequestParam("code") String authorizationCode) {
         OAuth2Operations operations = factory.getOAuthOperations();
-        AccessGrant accessToken = operations.exchangeForAccess(authorizationCode, "http://localhost:8080/forwardLogin/",
-                null);
+        AccessGrant accessToken = operations.exchangeForAccess(authorizationCode, "http://localhost:8080/forwardLogin/", null);
         Connection<Facebook> connection = factory.createConnection(accessToken);
         Facebook facebook = connection.getApi();
         String[] fields = { "id", "email", "first_name", "last_name" };
         User userProfile = facebook.fetchObject("me", User.class, fields);
         String userName = userService.saveUser(userProfile.getName(), null, userProfile.getEmail());
-        ModelAndView model = new ModelAndView("/player/s");
-        model.addObject("user", userProfile);
-        return "signup";
-
+        if (userName != null) {
+            return "signupPlayer";
+        } else {
+            return "signup";
+        }
     }
 
 }
