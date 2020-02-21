@@ -82,3 +82,40 @@ Contains one calendar with the matches of each month.
 ![Calendar](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/Calendar.JPG)
 ### Flow Diagram
 ![Diagram](https://raw.githubusercontent.com/CodeURJC-DAW-2019-20/PadelVersus/master/WebImages/flowDiagram.JPG)
+
+# Fase 2
+## Description of the Fase
+
+## Most Important Commits
+| Name | Github user | BestCommit | 2 | 3 | 4 | 5 |
+|--------|--------|--------|--------|--------|--------|--------|
+|Alejandro Checa Folguera | AlexCh98 |--------|--------|--------|--------|--------|
+|Iván Martín Sanz| i.martins.2016@alumnos.urjc.es | i100van |--------|--------|--------|--------|--------|
+|José Luis Lavado Sánchez | jl.lavado.2016@alumnos.urjc.es | lujoselu98 |--------|--------|--------|--------|--------|
+|Lucas Gómez Torres | l.gomezt.2016@alumnos.urjc.es | LucasGomezTorres |--------|--------|--------|--------|--------|
+|Daniel Carmona Pedrajas | d.carmonape@alumnos.urjc.es | Dacarpe03 |--------|--------|--------|--------|--------|
+
+## More worked file
+| Name | Github user | 1 | 2 | 3 | 4 | 5 |
+|--------|--------|--------|--------|--------|--------|--------|
+|Alejandro Checa Folguera | AlexCh98 |--------|--------|--------|--------|--------|
+|Iván Martín Sanz| i.martins.2016@alumnos.urjc.es | i100van |--------|--------|--------|--------|--------|
+|José Luis Lavado Sánchez | jl.lavado.2016@alumnos.urjc.es | lujoselu98 |--------|--------|--------|--------|--------|
+|Lucas Gómez Torres | l.gomezt.2016@alumnos.urjc.es | LucasGomezTorres |--------|--------|--------|--------|--------|
+|Daniel Carmona Pedrajas | d.carmonape@alumnos.urjc.es | Dacarpe03 |--------|--------|--------|--------|--------|
+
+## Textual Description Of Work
+| Name | Github user | Description |
+|--------|--------|--------|
+|Alejandro Checa Folguera | AlexCh98 |--------|--------|--------|
+|Iván Martín Sanz| i.martins.2016@alumnos.urjc.es | i100van |--------|--------|--------|
+|José Luis Lavado Sánchez | jl.lavado.2016@alumnos.urjc.es | lujoselu98 |--------|--------|--------|
+|Lucas Gómez Torres | l.gomezt.2016@alumnos.urjc.es | LucasGomezTorres |--------|--------|--------|
+|Daniel Carmona Pedrajas | d.carmonape@alumnos.urjc.es | Dacarpe03 |--------|--------|--------|
+## Navigation
+
+## Entity Diagram
+
+## Class/Template Diagram
+
+## Demo Structure
